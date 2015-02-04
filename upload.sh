@@ -1,0 +1,1 @@
+rsync -vrlPtz --exclude '**/ghost.db' --exclude 'upload.sh' ./* -e ssh root@vishnugopal.com:/var/www/ghost
