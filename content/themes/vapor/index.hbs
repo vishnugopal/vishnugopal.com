@@ -14,6 +14,7 @@
             <p class="permalink"><a href="{{url}}" data-disqus-identifier="{{id}}">Permalink</a> <i class="fa fa-chevron-circle-right"></i></p>
         </section>
         
+        {{#if @last}}
         <footer class="post-footer">
             {{#if author}}
             <section class="author">
@@ -23,7 +24,9 @@
                 <p class="bio">{{author.bio}}</p>
             </section>
             {{/if}}
-        </footer>  
+        </footer>
+        {{/if}}
+        
     </article>
 
     {{/foreach}}
